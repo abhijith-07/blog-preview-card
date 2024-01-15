@@ -14,12 +14,16 @@
 }
 
 body {
-    background-color: var(--yellow);
     font-family: 'Figtree', sans-serif;
+}
+
+.container {
+    background-color: var(--yellow);
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    min-width: 100vw;
 }
 
 .card {
@@ -56,12 +60,14 @@ body {
 
 .date {
     margin: 1rem 0;
+    font-size: .75rem;
 }
 
 .content .heading {
     margin: 1rem 0;
     white-space: nowrap;
     font-size: 1.5rem;
+    width: 100%;
 }
 
 .content .description {
@@ -86,7 +92,6 @@ body {
 
 .attribution { 
     display: block;
-    position: fixed;
     bottom: 1rem;
     font-size: 11px; 
     text-align: center;
@@ -99,7 +104,36 @@ body {
 
 @media (max-width: 375px) {
     .card {
-        width: 90%;
-        margin: 1rem;
+        max-width: 270px;
+        margin-top: -5rem;
+    }
+
+    .learning {
+        margin-top: .5rem;
+    }
+
+    .date {
+        margin-top: .5rem;
+    }
+    
+    .card .heading {
+        font-size: 1.25rem;
+    }
+
+    .card .description {
+        font-size: .8rem;
+        margin-top: -0.5rem;
+    }
+
+    .author {
+        margin-top: .75rem;
+    }
+
+    .author img {
+        width: 20px;
+    }
+
+    .author .name {
+        font-size: .75rem;
     }
 }
