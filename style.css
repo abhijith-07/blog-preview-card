@@ -92,10 +92,10 @@ body {
 
 .attribution { 
     display: block;
-    bottom: 1rem;
-    font-size: 11px; 
+    font-size: .75rem; 
     text-align: center;
-    color: var(--black); 
+    color: var(--black);
+    margin-top: -1rem; 
 }
 
 .attribution a { 
@@ -135,5 +135,9 @@ body {
 
     .author .name {
         font-size: .75rem;
+    }
+    
+    .attribution { 
+        font-size: .5rem;
     }
 }
